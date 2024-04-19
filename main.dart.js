@@ -25865,9 +25865,11 @@ this.b=b
 this.c=c},
 ah_:function ah_(a,b){this.a=a
 this.b=b},
-ahg:function ahg(a){this.a=a},
-ah8:function ah8(a){this.a=a},
-ah1:function ah1(){},
+ahg:function ahg(a,b){this.a=a
+this.b=b},
+ah8:function ah8(a,b){this.a=a
+this.b=b},
+ah1:function ah1(a){this.a=a},
 ah9:function ah9(){},
 MW:function MW(a,b,c,d,e,f,g,h,i,j,k,l){var _=this
 _.a=a
@@ -25948,7 +25950,8 @@ return A.P($async$anN,r)},
 K9:function K9(a){this.a=a},
 a6D(a,b){return new A.mi(a,b)},
 d_(a,b){return new A.mj(a,b)},
-pq:function pq(a){this.a=a},
+pq:function pq(a,b){this.c=a
+this.a=b},
 Ut:function Ut(a,b,c,d,e,f,g,h,i,j){var _=this
 _.d=a
 _.e=b
@@ -84132,7 +84135,7 @@ this.d=A.i3(A.i3(A.IB(new A.e3(r)).gqC().pM(null)).c.jt("Sorular"))},
 I(a){var s=null,r=A.Y3(A.b([A.a48(s,B.EG,s,new A.ahe(a),s,s)],t.D),B.bS,B.S_),q=this.d
 q===$&&A.a()
 q=q.a.nl(0,q.b,B.ip)
-return A.a9Q(r,new A.AE(new A.ahf(this),new A.h2(A.aLZ(),q,A.m(q).i("h2<ck.T,eH>")),s,t.CQ),A.atJ(B.bS,B.EC,!1,new A.ahg(a)))}}
+return A.a9Q(r,new A.AE(new A.ahf(this),new A.h2(A.aLZ(),q,A.m(q).i("h2<ck.T,eH>")),s,t.CQ),A.atJ(B.bS,B.EC,!1,new A.ahg(this,a)))}}
 A.ahe.prototype={
 $0(){var s=$.cX,r=(s==null?$.cX=$.hT():s).hS("[DEFAULT]")
 A.cQ(r,$.hS(),!0)
@@ -84189,7 +84192,7 @@ i=J.d7(f.c)
 h=f.d
 if(h==null)h=""
 f.a.push(new A.MW(q,p,o,n,m,l,k,j,r,i,h,B.h.k(J.aC6(f.e,a))))}catch(g){s=A.ai(g)
-A.lu(s)}},
+A.lu("Hata olu\u015ftu: "+A.i(s)+" "+A.i(a))}},
 $S:20}
 A.ahb.prototype={
 $2(a,b){var s,r,q,p,o,n,m,l,k,j=null,i=this.b,h=i[b]
@@ -84247,17 +84250,17 @@ r=$.cX
 o=(r==null?$.cX=$.hT():r).hS(q)
 A.cQ(o,p,!0)
 p=A.a1X(new A.e3(o)).goS().a
-A.i3(s.gqC().pM("OyunVerileri/"+p.c.a.a+"/ogretmen")).u3().bR(new A.ah8(this.a),t.P).ku(new A.ah9())},
+A.i3(s.gqC().pM("OyunVerileri/"+p.c.a.a+"/ogretmen")).u3().bR(new A.ah8(this.a,this.b),t.P).ku(new A.ah9())},
 $S:0}
 A.ah8.prototype={
-$1(a){var s,r=a.gmo().a.a.h(0,"value"),q=this.a
-if(J.d(r,!0)){s=A.JI(new A.ah1(),null,t.z)
+$1(a){var s,r=a.gmo().a.a.h(0,"value"),q=this.b
+if(J.d(r,!0)){s=A.JI(new A.ah1(this.a),null,t.z)
 A.ik(q,!1).kQ(s)}else{q=q.ab(t.Pu)
 q.toString
 q.f.nN(B.N0)}},
 $S:503}
 A.ah1.prototype={
-$1(a){return new A.pq(null)},
+$1(a){return new A.pq(this.a.e,null)},
 $S:504}
 A.ah9.prototype={
 $1(a){A.lu("Hata olu\u015ftu: "+A.i(a))},
@@ -84793,7 +84796,7 @@ s=3
 return A.R(o.xI(f,e,d),$async$$0)
 case 3:g=b.i(a0)
 A.lu("soru say\u0131s\u0131 \xe7evirme sonucu: "+g)
-c=A.aw(["soru",n,"A",l,"B",k,"C",j,"D",i,"dogru",m.toUpperCase(),"resim",h,"soruyuEkleyenKisi","XAKZyNCEBeelzyt80LS6MhrMscy1","zaman",new A.hd(Date.now(),!1).k(0)],t.N,t.z)
+c=A.aw(["soru",n,"A",l,"B",k,"C",j,"D",i,"dogru",m.toUpperCase(),"resim",h,"soruyuEkleyenKisi",o.a.c,"zaman",new A.hd(Date.now(),!1).k(0)],t.N,t.z)
 m=p.b
 A.i3(o.Q.c.jt("/"+f+"/"+e+"/"+d+"/"+g)).c.l0(0,c).bR(new A.akD(o,m),t.P).ku(new A.akE(m))
 case 1:return A.O(q,r)}})
